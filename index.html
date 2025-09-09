@@ -138,8 +138,8 @@ function validateLogin(username, password) {
 async function loadVideos() {
   try {
     const [mainRes, freeRes] = await Promise.all([
-      fetch("https://eros-15.github.io/videos.json").then(r => r.json()),
-      fetch("https://eros-15.github.io/free_videos.json").then(r => r.json())
+      fetch("https://eros-15.github.io/1hdy/videos.json").then(r => r.json()),
+      fetch("https://eros-15.github.io/1hdy/free_videos.json").then(r => r.json())
     ]);
     videos = [...mainRes, ...freeRes];
     generateCategories();
